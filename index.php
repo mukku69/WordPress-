@@ -56,7 +56,8 @@
                     <div class="post-preview">
                         <a href="post.html">
                             <h2 class="post-title">
-                                <?php the_title(); ?>
+                                <?php $title = the_title('■','●','false'); ?>
+                                <?php echo $title; ?>
                             </h2>
                             <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
                         </a>
@@ -152,6 +153,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="http://linc.local:10004/wp-content/themes/My-blog/js/scripts.js"></script>
-        <?php wp_footer(); ?>
+    <?php wp_footer(); ?>
     </body>
 </html>
